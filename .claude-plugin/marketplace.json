@@ -1,0 +1,11 @@
+{
+  "name": "claude-mods",
+  "owner": { "name": "alessandrococco78" },
+  "plugins": [
+    {
+      "name": "spia-chat",
+      "source": "./spia-chat",
+      "description": "Animazioni che avvisano quando la chat è troppo piena e se conviene passare a una chat normale, a un progetto o restare su Code"
+    }
+  ]
+}
