@@ -4,18 +4,35 @@ I miei mod per Claude Code.
 
 ## spia-chat
 
-Mostra sopra il campo di testo un'animazione quando la chat si sta riempiendo:
-una nuvoletta che si riempie (arancione dal 60% di contesto usato, rossa e
-tremante dall'80%), con il pulsante **Compatta ora** e il consiglio di aprire una
-nuova conversazione. Come sfondo del tema, un tubo sul bordo destro si riempie
-insieme al contesto.
+Un tema per la scheda **Code** dell'app Claude che tiene d'occhio la conversazione.
 
-Dopo qualche messaggio suggerisce, con una freccia animata, se conviene passare
-a una **chat normale** (nessun lavoro su codice o file), a un **Progetto**
-(soprattutto documenti) o restare su **Claude Code**.
+- **Sempre visibile, dallo 0%:** sopra il campo di testo tre barrette animate: quanto è piena la
+  **chat**, il **limite delle 5 ore** e il **limite settimanale** del piano Pro, con l'ora in cui si azzerano.
+- **Dal 60%** compare la nuvoletta che si riempie (arancione), **dall'80%** diventa rossa e trema.
+- **Pulsante «Riassunto per nuova chat»:** Claude prepara un riassunto da incollare in una
+  conversazione nuova, per ripartire leggeri. Lo stesso con il comando `/riassunto`.
+- **Sfondo che cambia col contesto:** un cielo sereno col sole che man mano si annuvola,
+  fino al temporale con la pioggia quando la chat è quasi piena.
+- **Colori crema caldo** di giorno e **marrone scuro** di notte.
+- **Dove conviene lavorare:** dopo qualche messaggio una freccia animata suggerisce se passare a
+  una **chat normale** o a un **Progetto**, oppure restare su **Claude Code**.
+- `/dove` riassume tutto in qualsiasi momento.
 
-Il comando `/dove` mostra in ogni momento la percentuale di contesto usato e il consiglio.
-Le animazioni compaiono nell'app desktop e su mobile; nel terminale si vede una barra di testo.
+Nel terminale le animazioni diventano barre di testo.
+
+### Aggiornare all'ultima versione
+
+Da PowerShell (o da un terminale):
+
+```bash
+claude plugin marketplace update claude-mods
+```
+
+```bash
+claude plugin update spia-chat@claude-mods
+```
+
+poi chiudi e riapri Claude Code (o l'app).
 
 ## Installazione
 
