@@ -51,5 +51,11 @@ claude plugin install spia-chat --marketplace alessandrococco78/claude-mods
 Nell'app desktop: clicca **+** accanto al campo di testo, poi **Plugins**, **Add marketplace**
 con `alessandrococco78/claude-mods`, poi **Add plugin**.
 
-Il repository è privato: per installarlo, git sul tuo computer deve già avere accesso
-a GitHub (chiave SSH, oppure `gh auth login` e poi `gh auth setup-git`).
+### Nelle sessioni cloud (anche dal telefono)
+
+Lo script di avvio dell'ambiente cloud installa il tema in ogni nuova sessione:
+
+```bash
+claude plugin marketplace add alessandrococco78/claude-mods || true
+claude plugin install spia-chat@claude-mods --scope user || true
+```
